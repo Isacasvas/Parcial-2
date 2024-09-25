@@ -24,6 +24,6 @@ db.Sequelize = Sequelize;
 db.sequelize = sequelize;
 
 db.Autor = require('../models/autores.js')(sequelize, Sequelize);    
- 
+db.Persona = require('../models/personas.js')(sequelize, Sequelize);
 
 module.exports = db;
