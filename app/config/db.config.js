@@ -23,8 +23,7 @@ const db = {};
 db.Sequelize = Sequelize;
 db.sequelize = sequelize;
 
-db.Miembro = require('../models/members.js')(sequelize, Sequelize);
 db.Autor = require('../models/autores.js')(sequelize, Sequelize);    
-db.Libro = require('../models/libros.js')(sequelize, Sequelize);     
+ 
 
 module.exports = db;
